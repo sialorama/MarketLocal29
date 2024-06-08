@@ -14,10 +14,12 @@ src/
 │   └── ClientOrderDAO.java
 ├── controller/
 │   └── MarketController.java
+├── utils/
+│   ├── HibernateUtil.java
+│   └── Exceptions.java
 ├── view/
 │   └── Main.java
-└── utils/
-    └── Exceptions.java
 resources/
 └── hibernate.cfg.xml
+
 ```
