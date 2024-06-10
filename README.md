@@ -36,9 +36,11 @@ src/
 ```
 # Screenshots:  
 - La base de données dans PhpMyAdmin:
+  
   ![Alt db_screenshot](./img/db_01.png)
 
 - Les tables dans PhpMyAdmin:
+  
   ![Alt db_tables](./img/Table_01.png)  
   
   ![Alt db_tables](./img/Table_02.png)  
