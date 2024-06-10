@@ -1,45 +1,39 @@
 package org.example.controller;
 
-
-import org.example.dao.ClientOrderDao;
-import org.example.dao.ProducerDao;
-import org.example.dao.ProductDao;
-import org.example.model.ClientOrder;
-import org.example.model.Market;
-import org.example.model.Producer;
+import org.example.dao.ProductDAO;
+import org.example.dao.ProducerDAO;
+import org.example.dao.ClientOrderDAO;
 import org.example.model.Product;
+import org.example.model.Producer;
+import org.example.model.ClientOrder;
 
 public class MarketController {
-    private Market market;
-    private ProducerDao producerDao;
-    private ProductDao productDao;
-    private ClientOrderDao orderDao;
+    private ProductDAO productDAO;
+    private ProducerDAO producerDAO;
+    private ClientOrderDAO clientOrderDAO;
 
     public MarketController() {
-        market = new Market();
-        producerDao = new ProducerDao();
-        productDao = new ProductDao();
-        orderDao = new ClientOrderDao();
-    }
-
-    public void addProducer(Producer producer) {
-        producerDao.save(producer);
-        market.addProducer(producer);
+        productDAO = new ProductDAO();
+        producerDAO = new ProducerDAO();
+        clientOrderDAO = new ClientOrderDAO();
     }
 
     public void addProduct(Product product) {
-        productDao.save(product);
-        market.addProduct(product);
+        productDAO.save(product);
     }
 
-    public void addOrder(ClientOrder order) {
-        orderDao.save(order);
-        market.addOrder(order);
+    public void addProducer(Producer producer) {
+        producerDAO.save(producer);
     }
 
-    public void displayMarket() {
-        System.out.println("Producers: " + market.getProducers());
-        System.out.println("Products: " + market.getProducts());
-        System.out.println("Orders: " + market.getOrders());
+    public void addClientOrder(ClientOrder order) {
+        clientOrderDAO.save(order);
     }
+
+/*    // Retrieve a product by its ID
+    public Product getProductById(int productId) {
+        return productDAO.findById(productId);
+    }*/
+
+    // Additional methods to handle market operations can be added here
 }
