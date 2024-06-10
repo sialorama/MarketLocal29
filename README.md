@@ -12,8 +12,7 @@ L'objectif est de consolider vos connaissances en POO, gestion des exceptions, t
 src/
 └── main/
     ├── java/
-    │   └── org/
-    │       └── example/
+    │   └── org.example/
     │           ├── model/
     │           │   ├── Producer.java
     │           │   ├── Product.java
