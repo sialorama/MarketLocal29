@@ -31,10 +31,6 @@ public class ClientOrder {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Product getProduct() {
         return product;
     }

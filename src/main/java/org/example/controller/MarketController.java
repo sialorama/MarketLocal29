@@ -30,10 +30,10 @@ public class MarketController {
         clientOrderDAO.save(order);
     }
 
-/*    // Retrieve a product by its ID
+    // Retrieve a product by its ID
     public Product getProductById(int productId) {
         return productDAO.findById(productId);
-    }*/
+    }
 
     // Additional methods to handle market operations can be added here
 }
