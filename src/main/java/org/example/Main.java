@@ -13,15 +13,15 @@ public class Main {
         MarketController controller = new MarketController();
 
         // Ajouter un producteur
-        Producer producer = new Producer("John Doe", "john@example.com");
+        Producer producer = new Producer("Marie LAWSON", "marie@example.com");
         controller.addProducer(producer);
 
         // Ajouter un produit
-        Product product = new Product("Laptop", 1200.00);
+        Product product = new Product("Ananas", 2.50);
         controller.addProduct(product);
 
         // Créer une commande client
-        ClientOrder order = new ClientOrder(product, 1, new Date());
+        ClientOrder order = new ClientOrder(product, 2, new Date());
         controller.addClientOrder(order);
 
         System.out.println("Données ajoutées avec succès!");
